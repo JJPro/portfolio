@@ -1,15 +1,21 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Jason Ji's portfolio",
-  "scripts": {
-    "compile": "composer dump-autoload -o"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "@wordpress/create-block": "^4.21.0",
-    "@wordpress/scripts": "^26.8.0"
-  }
+	"name": "portfolio",
+	"version": "1.0.0",
+	"description": "Jason Ji's portfolio",
+	"scripts": {
+		"build": "wp-scripts build --webpack-src-dir=assets/scripts/blocks",
+		"format": "wp-scripts format",
+		"lint:css": "wp-scripts lint-style",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"start": "wp-scripts start --webpack-src-dir=assets/scripts/blocks",
+		"compile": "composer dump-autoload -o"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@wordpress/create-block": "^4.21.0",
+		"@wordpress/scripts": "^26.8.0"
+	}
 }
