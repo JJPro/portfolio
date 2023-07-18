@@ -1,0 +1,20 @@
+{
+    "name": "jjpro/portfolio-theme",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "JJPro\\PortfolioTheme\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Lu Ji",
+            "email": "lu.ji1@me.com"
+        }
+    ],
+    "config": {
+        "allow-plugins": {
+            "composer/installers": true
+        }
+    }
+}

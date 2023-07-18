@@ -1,0 +1,15 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Jason Ji's portfolio",
+  "scripts": {
+    "compile": "composer dump-autoload -o"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/create-block": "^4.21.0",
+    "@wordpress/scripts": "^26.8.0"
+  }
+}

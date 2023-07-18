@@ -1,0 +1,129 @@
+/*
+Theme Name: JJPro Portfolio
+Theme URL: https://github.com/jjpro/portfolio
+Author: Lu Ji
+Author URI: https://github.com/jjpro
+Description: Theme of my portfolio
+Template: twentytwentythree
+Requires at least: WordPress 5.9
+Version: 1.0
+Text Domain: jjpro
+Tags: gutenberg, blocks, portfolio
+*/
+
+body.page-template-frontpage .wp-site-blocks {
+  padding-top: 0;
+}
+
+body.page-template-frontpage header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: transparent;
+  transition: all 0.3s linear 0s;
+  padding: 3rem 0;
+}
+body.page-template-frontpage header .wp-block-navigation-item a:hover {
+  text-decoration: none;
+}
+body.page-template-frontpage header .wp-block-navigation-item {
+  /* font-family: Poppins; */
+  /* font-size: 24px; */
+  font-weight: 400;
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.60);
+}
+body.page-template-frontpage header .wp-block-navigation-item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  bottom: -4px;
+  height: 2.5px;
+  background-color: #fff;
+  transition: all .3s cubic-bezier(.075,.82,.165,1);
+}
+body.page-template-frontpage header .wp-block-navigation-item:hover::after {
+  width: 100%;
+}
+body.page-template-frontpage header .wp-block-navigation-item:hover {
+  color: #FFF;
+}
+body.page-template-frontpage header .current-menu-item {
+  font-weight: 500;
+  color: #FFF;
+}
+body.page-template-frontpage .banner {
+  color: #FFF;
+  width: 100vw;
+  margin:0;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(90deg, #3C80B7 0%, rgba(23, 103, 168, 0.47) 100%);
+  clip-path: url(#bannerClipPath);
+}
+body.page-template-frontpage .banner .tagline-container {
+  transform: translateY(-27%);
+}
+body.page-template-frontpage .banner ul.tagline {
+  list-style: none;
+  padding: 0;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+body.page-template-frontpage .banner ul.social-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+body.page-template-frontpage .banner ul.social-links svg {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+body.page-template-frontpage .banner .profile-image {
+  background-image: url(./assets/images/profile-image.png);
+  background-size: cover;
+  width: 60%;
+  padding-top: 72%;
+}
+body.page-template-frontpage .skill {
+  width: 17rem;
+  height: 12rem;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2rem;
+  justify-content: center;
+  transition: all 0.3s linear 0s;
+}
+body.page-template-frontpage .skills div.skill:hover {
+  cursor: not-allowed;
+}
+body.page-template-frontpage .skills a.skill {
+  text-decoration: none;
+}
+body.page-template-frontpage .skills a.skill:hover {
+  cursor: pointer;
+  filter: brightness(70%);
+}
+body.page-template-frontpage .skill .icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+body.page-template-frontpage footer {
+  font-size: small;
+  font-weight: lighter;
+  margin-top: 2.75rem;
+}
