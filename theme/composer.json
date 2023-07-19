@@ -3,7 +3,8 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "JJPro\\PortfolioTheme\\": "src/"
+            "JJPro\\PortfolioTheme\\": ["src/classes"],
+            "JJPro\\PortfolioTheme\\Utils\\": ["src/utils"]
         }
     },
     "authors": [
@@ -16,5 +17,8 @@
         "allow-plugins": {
             "composer/installers": true
         }
+    },
+    "require": {
+        "timber/timber": "^1.22"
     }
 }

@@ -7,4 +7,12 @@
  * Block Types: core/template-part/footer
  */
 ?>
-&copy;<?php echo date("Y"); ?> Jason Ji, All rights reserved.
+<!-- wp:group {"layout":{"type":"flex","justifyContent":"center"}} -->
+<div class="wp-block-group">
+	<!-- wp:paragraph {"align":"center"} -->
+	<p class="has-text-align-center">
+		&copy;<?php echo date("Y"); ?> Jason Ji, All rights reserved.
+	</p>
+	<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->

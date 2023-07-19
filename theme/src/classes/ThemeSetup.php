@@ -7,7 +7,7 @@ class ThemeSetup
   public static function init()
   {
     self::postFormats();
-    self::editorStyle();
+    // self::editorStyle();
   }
 
   private static function postFormats()
@@ -17,6 +17,6 @@ class ThemeSetup
   private static function editorStyle()
   {
     add_theme_support('wp-block-styles');
-    // add_editor_style('editor-style.css'); // Enqueue editor styles.
+    add_editor_style('assets/styles/editor-style.css');
   }
 }

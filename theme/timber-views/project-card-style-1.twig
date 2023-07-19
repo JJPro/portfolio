@@ -1,0 +1,46 @@
+{% if tooltip %}
+	{% set tooltipAttr = ' data-balloon-length="large" aria-label="' ~ tooltip ~ '" data-balloon-pos="up" ' %}
+{% endif %}
+
+{% set videoAttr = isVideo ? ' data-ytid="' ~ href ~ '"' %}
+{% set videoClass = isVideo ? ' vp-s vp-yt-type ' %}
+
+
+{% if href %}
+	{% set openingTag = '<a class="main' ~ videoClass ~ '" href="' ~ href ~ '"' ~ tooltipAttr ~ videoAttr ~ '>' %}
+	{% set closingTag = '</a>' %}
+{% else %}
+	{% set openingTag = '<div class="main"' ~ tooltipAttr ~ '>' %}
+	{% set closingTag = '</div>' %}
+{% endif %}
+
+
+<article class="project-card-style-1">
+	{{ openingTag | raw }}
+	{% if isVideo %}
+		<div class="play-btn"></div>
+	{% else %}
+		<div class="thumbnail" style="background-image: url({{ thumbnail | raw }}); background-color: {{ thumbnailBG ?? '#fff' }}; {{thumbnailScale ? 'background-size:' ~ thumbnailScale }}"></div>
+	{% endif %}
+
+	<div class="upper" style="background-color: {{ tint }}">
+		<div class="title" style="{{ titleStyle ?? '' }}">
+			<span>{{ title | raw }}</span>
+		</div>
+	</div>
+	<div class="lower">{{ summary }}</div>
+	<div class="hover-blur"></div>
+	{{ closingTag | raw }}
+
+	{% if repos %}
+		<div class="footer">
+			<ul class="repos">
+				{% for repo in repos %}
+					<li>
+						<a href="{{repo}}"></a>
+					</li>
+				{% endfor %}
+			</ul>
+		</div>
+	{% endif %}
+</article>
