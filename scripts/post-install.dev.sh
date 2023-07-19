@@ -8,7 +8,7 @@ wp disable-comments delete --types=all
 # Remove Unwanted Plugins
 wp plugin uninstall hello
 
-wp theme activate jjpro-porfolio
+wp theme activate jjpro-portfolio
 
 # Set Permalink Structure
 wp rewrite structure /%category%/%postname%/   
