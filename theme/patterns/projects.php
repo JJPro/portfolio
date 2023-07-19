@@ -52,7 +52,7 @@ $ossProjects = [
 		'thumbnail' => 'z2m.png',
 		'tint' => '#FBB51F',
 		'href' => 'https://www.zigbee2mqtt.io/',
-		'repos' => ['https://github.com/JJPro/CTP-R01-converter/wiki'],
+		'repos' => ['https://github.com/JJPro/CTP-R01-converter'],
 	],
 	[
 		'title' => 'Magic Racket',
