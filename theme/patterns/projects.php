@@ -105,7 +105,7 @@ $personalProjects = [
 		'thumbnail' => 'tanks.png',
 		'thumbnailScale' => '73%;',
 		'tint' => 'rgba(35, 81, 121, 0.90)',
-		'href' => 'https://github.com/JJPro/tanks',
+		'href' => 'https://tanks.jjpro.me',
 		'repos' => [
 			'https://github.com/JJPro/tanks',
 		],
