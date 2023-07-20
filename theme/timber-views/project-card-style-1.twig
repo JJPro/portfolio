@@ -28,7 +28,16 @@
 			<span>{{ title | raw }}</span>
 		</div>
 	</div>
-	<div class="lower">{{ summary }}</div>
+	<div class="lower">
+		<div class="summary">
+			{{ summary }}
+		</div>
+		<ul class="project-tags">
+			{% for tag in tags %}
+				<li class="tag">{{ tag }}</li>
+			{% endfor %}
+		</ul>
+	</div>
 	<div class="hover-blur"></div>
 	{{ closingTag | raw }}
 

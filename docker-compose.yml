@@ -7,7 +7,7 @@
 version: '3'
 
 services:
-  wordpress:
+  portfolio-wordpress:
     build:
       context: .
       dockerfile: Dockerfile.dev
@@ -61,7 +61,7 @@ services:
     volumes:
       - ./conf/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
     volumes_from:
-      - wordpress
+      - portfolio-wordpress
   
 volumes:
   db:

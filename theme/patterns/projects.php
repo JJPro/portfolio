@@ -23,6 +23,7 @@ define('IMAGE_URI', get_stylesheet_directory_uri() . '/assets/images/projects/')
  * 		@type bool   $isVideo (optional)
  * 		@type string $href
  * 		@type string[] $repos (optional)
+ * 		@type string[] $tags  (optional)
  * 		@type string $tooltip (optional)
  * }
  */
@@ -53,6 +54,7 @@ $ossProjects = [
 		'tint' => '#FBB51F',
 		'href' => 'https://www.zigbee2mqtt.io/',
 		'repos' => ['https://github.com/JJPro/CTP-R01-converter'],
+		'tags' => ['Zigbee', 'Typescript', 'Node', 'ESLint'],
 	],
 	[
 		'title' => 'Magic Racket',
@@ -64,6 +66,7 @@ $ossProjects = [
 			'https://github.com/JJPro/magic-racket/tree/racket-lsp-integration',
 			'https://github.com/JJPro/racket-langserver/tree/jj-fix-documentSymbol'
 		],
+		'tags' => ['VSCode Extension', 'Racket', 'Typescript', 'Node', 'ESLint'],
 	],
 ];
 $personalProjects = [
@@ -72,7 +75,8 @@ $personalProjects = [
 		'summary' => 'Loving Heart Retreats Glamping',
 		'thumbnail' => 'lhr.png',
 		'tint' => 'rgba(79, 136, 130, 0.90)',
-		'href' => 'https://lovingheartretreats.com/',
+		'href' => 'https://www.lovingheartretreats.com/',
+		'tags' => ['ES6', 'React', 'PHP', 'Webpack', 'Babel', 'ESLint', 'Styled Components', 'SASS', 'Tailwind', 'Docker'],
 	],
 	[
 		'title' => 'NUCSSA',
@@ -88,6 +92,7 @@ $personalProjects = [
 			'https://github.com/NUCSSA/nucssa-portal-theme',
 			'https://github.com/NUCSSA/nucssa-pickup',
 		],
+		'tags' => ['ES6', 'React', 'PHP', 'Node', 'Webpack', 'Babel', 'ESLint', 'SASS', 'Tailwind', 'Docker'],
 	],
 	[
 		'title' => 'Particle Simulation',
@@ -98,6 +103,7 @@ $personalProjects = [
 		'repos' => [
 			'https://github.com/JJPro/OpenGL--Particle-Simulation-with-TransformFeedback-Buffer',
 		],
+		'tags' => ['C++', 'OpenGL'],
 	],
 	[
 		'title' => 'Tanks',
@@ -109,6 +115,7 @@ $personalProjects = [
 		'repos' => [
 			'https://github.com/JJPro/tanks',
 		],
+		'tags' => ['Elixir', 'WebSocket', 'PubSub', 'ES6', 'React', 'Webpack', 'Babel', 'ESLint', 'SASS', 'Tailwind', 'Github Actions/CICD', 'Docker'],
 	],
 	[
 		'title' => 'Ride Ordering<br/>(Airport Pickup)',
@@ -120,13 +127,15 @@ $personalProjects = [
 		'repos' => [
 			'https://github.com/NUCSSA/nucssa-pickup',
 		],
+		'tags' => ['PHP', 'ES6', 'React', 'Webpack', 'Babel', 'ESLint', 'SASS', 'Tailwind', 'Github Actions/CICD'],
 	],
 	[
 		'title' => 'WP LDAP Auth',
-		'summary' => 'Enables WordPress to authenticate with LDAP server, and manage user permissions by groups.',
+		'summary' => 'Enables WordPress to authenticate with LDAP server, and manage user permissions by groups',
 		'thumbnail' => 'wordpress.png',
 		'tint' => 'rgba(50, 55, 60, 0.90)',
 		'tooltip' => "This is part of a big project. Contact me on LinkedIn if you want to use commercially and I'd love to customize it for your organization.",
+		'tags' => ['PHP', 'LDAP', 'React', 'Webpack', 'Babel', 'ESLint', 'SASS', 'Github Actions/CICD'],
 	],
 	[
 		'title' => 'Paper Trades<br/>(Archived)',
@@ -137,6 +146,7 @@ $personalProjects = [
 		'repos' => [
 			'https://github.com/JJPro/paper-trading-system',
 		],
+		'tags' => ['Elixir', 'WebSocket', 'PubSub', 'ES6', 'React', 'Webpack', 'Babel', 'SASS'],
 	],
 ];
 $designProjects = [

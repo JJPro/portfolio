@@ -121,10 +121,10 @@ body.page-template-frontpage .skill {
 body.page-template-frontpage .skills div.skill:hover {
 	cursor: not-allowed;
 }
-body.page-template-frontpage .skills a.skill {
+body.page-template-frontpage .skills .skill {
 	text-decoration: none;
 }
-body.page-template-frontpage .skills a.skill:hover {
+body.page-template-frontpage .skills .skill:hover {
 	cursor: pointer;
 	filter: brightness(70%);
 }
@@ -175,7 +175,6 @@ body.page-template-projects .project-card-style-1 {
 }
 body.page-template-projects .project-card-style-1 .main {
 	text-decoration: none;
-	position: relative;
 	transition: all 0.3s linear 0s;
 }
 body.page-template-projects .project-card-style-1 .main .hover-blur {
@@ -192,11 +191,7 @@ body.page-template-projects .project-card-style-1 .main .hover-blur {
 body.page-template-projects .project-card-style-1 .main:hover .hover-blur {
 	opacity: 1;
 }
-body.page-template-projects .project-card-style-1 a.main:hover {
-	/* filter: brightness(70%); */
-}
 body.page-template-projects .project-card-style-1 div.main:hover {
-	/* filter: brightness(70%); */
 	cursor: not-allowed;
 }
 body.page-template-projects .project-card-style-1 .main .upper {
@@ -218,18 +213,27 @@ body.page-template-projects .project-card-style-1 .main .upper .title {
 }
 body.page-template-projects .project-card-style-1 .main .lower {
 	border-radius: 0 0 5px 5px;
+	background-color: #fff;
+}
+body.page-template-projects .project-card-style-1 .main .lower .summary {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 9rem;
+	height: 7rem;
 	color: #000;
-	background-color: #fff;
 	font-size: .9rem;
 	text-align: center;
 	padding: 0 1.5rem;
-	padding-bottom: 5%;
+	transform: translateY(.7rem);
 }
-
+body.page-template-projects .project-card-style-1 .main .lower .project-tags {
+	height: 9rem;
+	margin: 0; padding: 0 1.25rem 1rem; list-style: none;
+}
+body.page-template-projects .project-card-style-1 .main .lower .project-tags .tag {
+	display: inline-block;padding: 0 10px;
+	font-size: 12px; line-height: 1rem; color: rgba(137, 137, 153, .8); border: 1px solid rgba(137, 137, 153, .6); border-radius: 4px;
+}
 body.page-template-projects .project-card-style-1 .footer {
 	background-color: transparent;
 	position: absolute;
@@ -265,7 +269,7 @@ body.page-template-projects .project-card-style-1 .main .play-btn {
 	background-repeat: no-repeat;
 	position: absolute;
 	left: 50%;
-	top: 25%;
+	top: 5.5rem;
 	transform: translateX(-50%);
 	transition: all 0.3s linear 0s;
 }
