@@ -71,6 +71,15 @@ $ossProjects = [
 ];
 $personalProjects = [
 	[
+		'title' => 'This Website',
+		'summary' => 'My portfolio website',
+		'thumbnail' => 'my-avatar.png',
+		'tint' => '#6B9DD9',
+		'href' => 'https://jjpro.me/',
+		'repos' => ['https://github.com/JJPro/portfolio'],
+		'tags' => ['ES6', 'React', 'PHP', 'Webpack', 'Babel', 'SASS', 'Docker', 'Github Actions/CICD'],
+	],
+	[
 		'title' => 'Loving Heart',
 		'summary' => 'Loving Heart Retreats Glamping',
 		'thumbnail' => 'lhr.png',
@@ -147,6 +156,20 @@ $personalProjects = [
 			'https://github.com/JJPro/paper-trading-system',
 		],
 		'tags' => ['Elixir', 'WebSocket', 'PubSub', 'ES6', 'React', 'Webpack', 'Babel', 'SASS'],
+	],
+	[
+		'title' => 'Blue Bikes Analysis<br/>(Archived)',
+		'titleStyle' => 'font-size: 1.5rem;',
+		'summary' => 'Cross Factor Analysis for Blue Bikes in greater Boston',
+		'href' => 'https://bikes.jjpro.me',
+		'tooltip' => 'The weather API provider used in the project has been closed, so data won\'t load, the project is kept alive to demo React & UI design',
+		'thumbnail' => 'bluebikes.jpg',
+		'tint' => '#3D88C9',
+		'repos' => [
+			'https://github.com/JJPro/bikes-docker',
+			'https://github.com/JJPro/bike-sharing-theme',
+		],
+		'tags' => ['Weather API', 'ES6', 'React', 'Webpack', 'Babel', 'SASS', 'Github Actions/CICD', 'Docker'],
 	],
 ];
 $designProjects = [
