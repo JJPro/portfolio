@@ -4,8 +4,11 @@ WORKDIR /app/
 COPY theme ./
 RUN composer install && composer dump-autoload -o
 
-# NO JS to build for now 
-
+## Build assets (JS, CSS)
+FROM node:19 AS assets_builder
+WORKDIR /app/
+COPY theme ./
+RUN npm i && npm run build
 
 # Final Image 
 FROM wordpress:fpm
@@ -46,7 +49,8 @@ COPY conf/php/php-fpm.conf /usr/local/etc/php-fpm.d/www.conf
 # Give wp-cli write access
 RUN chown www-data:www-data /var/www
 USER www-data
-COPY --from=php_builder /app/assets /var/www/html/wp-content/themes/jjpro-portfolio/assets
+COPY --from=assets_builder /app/assets/images /var/www/html/wp-content/themes/jjpro-portfolio/assets/images
+COPY --from=assets_builder /app/build /var/www/html/wp-content/themes/jjpro-portfolio/build
 COPY --from=php_builder /app/parts /var/www/html/wp-content/themes/jjpro-portfolio/parts
 COPY --from=php_builder /app/patterns /var/www/html/wp-content/themes/jjpro-portfolio/patterns
 COPY --from=php_builder /app/src /var/www/html/wp-content/themes/jjpro-portfolio/src
