@@ -29,6 +29,7 @@ services:
         WORDPRESS_CONFIG_EXTRA=
         define( 'WP_DISABLE_FATAL_ERROR_HANDLER', true );
         define( 'WP_DEBUG_DISPLAY', true );
+        define( 'SCRIPT_DEBUG', true );
         define('SMTP_HOST', 'mailhog');
         define('SMTP_PORT', 1025);
         define('SMTP_USER', 'from@test.com');

@@ -1,0 +1,133 @@
+body.page-template-frontpage {
+	background: #0d192e;
+}
+body.page-template-frontpage .banner {
+	color: #fff;
+	width: 100vw;
+	margin: 0;
+	position: relative;
+	overflow: hidden;
+	background: linear-gradient(90deg, #3c80b7 0%, rgba(23, 103, 168, 0.47) 100%);
+	clip-path: url(#bannerClipPath);
+
+	.banner-content-container {
+		margin-left: auto; margin-right: auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		gap: 2rem;
+		padding-bottom: 10rem;
+		max-width: 900px;
+
+		.left {
+			.intro {
+				text-align: center;
+				@media screen and (min-width: 746px) {
+					text-align: left;
+				}
+				h1 {
+					font-weight: 700;
+					margin-top: 0;
+					margin-bottom: 1.5rem;
+				}
+				h2 {
+					font-weight: 500;
+					font-size: 1.35rem;
+				}
+				p {
+					font-weight: 300;
+				}
+			}
+			ul.social-icons {
+				margin-top: 5rem;
+				list-style: none;
+				padding: 0;
+				display: flex;
+				gap: 1rem;
+				justify-content: center;
+				@media screen and (min-width: 746px) {
+					justify-content: flex-start
+				}
+				svg {
+					width: 1.75rem;
+					height: 1.75rem;
+				}
+			}
+		}
+		.profile-image {
+			// background-image: url(../../assets/images/profile-image-2.jpeg);
+			// background-size: cover; background-position: center 75%;
+			background-image: url(../../assets/images/profile-image-3.jpg);
+			background-size: cover; background-position: center center;
+			width: 15rem;
+			height: 15rem;
+			border-radius: 50%;
+			border: 5px solid #5b9fde;
+		}
+	}
+}
+body.page-template-frontpage ul.recent-skills {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(140px, 200px));
+	gap: 0 10px;
+	padding: 0;
+	list-style: none;
+
+	li {
+		position: relative;
+		margin-bottom: 10px; padding-left: 20px;
+		font-size: .95rem; line-height: 1.37rem;
+		&::before {
+			content: "▹";
+			position: absolute;
+			left: 0px;
+			color: #64ffda;
+			font-size: .75rem;
+			line-height: 1.4rem;
+		}
+	}
+}
+body.page-template-frontpage .skills {
+	justify-content: center;
+	div.skill:hover {
+		cursor: not-allowed;
+	}
+	.skill {
+		width: 17rem;
+		height: 12rem;
+		color: #fff;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		row-gap: 2rem;
+		justify-content: center;
+		transition: all 0.3s linear 0s;
+		text-decoration: none;
+		&:hover {
+			cursor: pointer;
+			filter: brightness(70%);
+		}
+		.icon {
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			background-size: contain;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-color: #fff;
+		}
+	}
+}
+body.page-template-frontpage .explore-btn {
+	background-color: #3c80b7;
+	color: #fff;
+	text-decoration: none;
+	padding: 1.25rem 2.5rem;
+	&:hover {
+		filter: brightness(90%);
+	}
+}
+body.page-template-frontpage footer {
+	color: #8892b0;
+}

@@ -7,7 +7,7 @@
 ?>
 
 <div class="is-layout-constrained">
-	<div class="skills is-content-justification-center is-layout-flex wp-container-7">
+	<div class="skills is-layout-flex">
 		<a class="skill" href="/projects#personal-work" style="background-color: #BD303C;">
 			<div class="icon" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/images/skills/my-avatar.png)' ?>;"></div>
 			<div class="title">Software Engineer</div>
@@ -32,5 +32,8 @@
 			<div class="icon" style="background-image: url(<?php echo get_stylesheet_directory_uri() . '/assets/images/skills/github.webp)' ?>;"></div>
 			<div class="title">OSS Contributer</div>
 		</a>
+	</div>
+	<div class="is-layout-constrained" style="text-align: center; margin-top: 3rem;">
+		<a class="explore-btn" href="/projects">EXPLORE MY PROJECTS</a>
 	</div>
 </div>

@@ -1,0 +1,55 @@
+body.page-template-frontpage,
+body.page-template-projects {
+	.wp-site-blocks {
+		padding-top: 0;
+	}
+	header {
+		position: absolute;
+		z-index: 1;
+		width: 100%;
+		background-color: transparent;
+		transition: all 0.3s linear 0s;
+		padding: 3rem 0;
+
+		.wp-block-navigation-item {
+			/* font-family: Poppins; */
+			/* font-size: 24px; */
+			font-weight: 400;
+			font-style: normal;
+			color: rgba(255, 255, 255, 0.6);
+
+			&::after {
+				content: "";
+				position: absolute;
+				left: 0;
+				width: 0;
+				bottom: -4px;
+				height: 2.5px;
+				background-color: #fff;
+				transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+			}
+			&:hover::after {
+				width: 100%;
+			}
+			&:hover {
+				color: #fff;
+			}
+			a:hover {
+				text-decoration: none;
+			}
+		}
+
+		.current-menu-item {
+			font-weight: 500;
+			color: #fff;
+		}
+		.wp-block-navigation__responsive-container-open {
+			color: rgba(255, 255, 255, 0.60);
+		}
+	}
+}
+footer {
+	font-size: small;
+	font-weight: lighter;
+	padding-top: 2rem;
+}
