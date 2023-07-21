@@ -2,17 +2,18 @@
 # 1. expose port in `nginx` container, OR add `nginx` to network of another reverse proxy server (e.g. NPM)
 # 2. Initial setup via the browser
 # 3. execute command to install Recommended plugins (Edit the file to your needs):
-#     - `docker exec wordpress /var/www/post-install.prod.sh`
+#     - `docker exec wordpress /var/www/post-install.sh`
 
 ---
 version: '3'
 
 services:
   portfolio-wordpress:
-    image: jjpro/portfolio
+    image: jjpro/wordpress-fpm:prod
     restart: unless-stopped
     volumes:
       - wordpress_data:/var/www/html
+      - ./scripts/post-install.prod.sh:/var/www/post-install.sh
     depends_on:
       - portfolio-mariadb
     environment:
@@ -47,10 +48,19 @@ services:
     networks:
       - default
       - npm_br
-
     volumes:
       - wordpress_data:/var/www/html
       - ./conf/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+
+  portfolio-theme: 
+    image: jjpro/portfolio-theme
+    restart: on-failure
+    depends_on: 
+      - portfolio-wordpress
+      - portfolio-nginx
+    volumes:
+      - wordpress_data:/var/www/html
+
 
 volumes:
   db:

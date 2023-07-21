@@ -1,21 +1,18 @@
 # TODO after running: 
 # 1. Complete initialization in browser
 # 2. execute command to install Recommended plugins (Edit the file to your needs):
-#     - `docker exec wordpress /var/www/post-install.dev.sh`
+#     - `docker exec wordpress /var/www/post-install.sh`
 
 ---
 version: '3'
 
 services:
   portfolio-wordpress:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
+    image: jjpro/wordpress-fpm:dev
     restart: unless-stopped
     volumes: 
       - wordpress_data:/var/www/html
-      - ./scripts/post-install.dev.sh:/var/www/post-install.dev.sh
-      - ./conf/php/php-fpm.conf:/usr/local/etc/php-fpm.d/www.conf
+      - ./scripts/post-install.dev.sh:/var/www/post-install.sh
       - ./theme:/var/www/html/wp-content/themes/jjpro-portfolio:ro
     depends_on:
       - mariadb
