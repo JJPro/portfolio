@@ -2,8 +2,8 @@
 	{% set tooltipAttr = ' data-balloon-length="large" aria-label="' ~ tooltip ~ '" data-balloon-pos="up" ' %}
 {% endif %}
 
-{% set videoAttr = isVideo ? ' data-ytid="' ~ href ~ '"' %}
-{% set videoClass = isVideo ? ' vp-s vp-yt-type ' %}
+{% set videoAttr = isVideo ? ' data-dwrap="1" title=' . title %}
+{% set videoClass = isVideo ? ' vp-s vp-mp4-type ' %}
 
 
 {% if href %}

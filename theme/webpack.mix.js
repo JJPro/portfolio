@@ -11,6 +11,7 @@ mix.browserSync({
 	notify: false,
 })
 	.sass('assets/styles/style.scss', 'build/css/')
+	.sass('assets/styles/fonts.scss', 'build/css/')
 	.options({
 		processCssUrls: false,
 	})

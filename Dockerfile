@@ -14,6 +14,7 @@ RUN npm i && npm run build
 FROM alpine
 WORKDIR /app/
 COPY --from=assets_builder /app/assets/images ./assets/images
+COPY --from=assets_builder /app/assets/fonts ./assets/fonts
 COPY --from=assets_builder /app/build ./build
 COPY --from=php_builder /app/parts ./parts
 COPY --from=php_builder /app/patterns ./patterns

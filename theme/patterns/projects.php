@@ -9,7 +9,7 @@ namespace JJPro\PortfolioTheme\Projects;
 
 use Timber\Timber;
 
-define('IMAGE_URI', get_stylesheet_directory_uri() . '/assets/images/projects/');
+define('PROJECT_DIR_URI', get_stylesheet_directory_uri() . '/assets/images/projects/');
 
 /**
  * @param $attrs [] {
@@ -29,7 +29,7 @@ define('IMAGE_URI', get_stylesheet_directory_uri() . '/assets/images/projects/')
  */
 function renderWithStyle1($attrs)
 {
-	if (array_key_exists('thumbnail', $attrs)) $attrs['thumbnail'] = IMAGE_URI . $attrs['thumbnail'];
+	if (array_key_exists('thumbnail', $attrs)) $attrs['thumbnail'] = PROJECT_DIR_URI . $attrs['thumbnail'];
 	Timber::render('project-card-style-1.twig', $attrs);
 }
 
@@ -43,7 +43,7 @@ function renderWithStyle1($attrs)
  */
 function renderWithStyle2($attrs)
 {
-	if ($attrs['thumbnail']) $attrs['thumbnail'] = IMAGE_URI . $attrs['thumbnail'];
+	if ($attrs['thumbnail']) $attrs['thumbnail'] = PROJECT_DIR_URI . $attrs['thumbnail'];
 	Timber::render('project-card-style-2.twig', $attrs);
 }
 $ossProjects = [
@@ -95,7 +95,8 @@ $personalProjects = [
 		'thumbnailScale' => '90%',
 		'isVideo' => true,
 		'tint' => '#C73724',
-		'href' => 'https://youtu.be/1bIdEREqas4',
+		'href' => PROJECT_DIR_URI . '/intro to IT.mp4',
+		// 'href' => 'https://youtu.be/1bIdEREqas4',
 		'repos' => [
 			'https://github.com/NUCSSA/nucssa-core/tree/master',
 			'https://github.com/NUCSSA/nucssa-portal-theme',
@@ -108,7 +109,8 @@ $personalProjects = [
 		'summary' => '2 million particles @ 60FPS Transform Feedback buffer ',
 		'isVideo' => true,
 		'tint' => 'rgba(57, 111, 35, 0.90)',
-		'href' => 'https://www.youtube.com/watch?v=nFGZ6Hcqzc8',
+		'href' => PROJECT_DIR_URI . '/cg particle simulation.mp4',
+		// 'href' => 'https://www.youtube.com/watch?v=nFGZ6Hcqzc8',
 		'repos' => [
 			'https://github.com/JJPro/OpenGL--Particle-Simulation-with-TransformFeedback-Buffer',
 		],
