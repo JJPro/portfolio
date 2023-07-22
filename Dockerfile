@@ -26,5 +26,4 @@ COPY --from=php_builder /app/*.php ./
 COPY --from=php_builder /app/style.css ./style.css
 COPY --from=php_builder /app/theme.json ./theme.json
 COPY scripts/update-portfolio.sh /docker-entrypoint.sh
-WORKDIR /var/www/html/wp-content/themes/jjpro-portfolio
 ENTRYPOINT [ "/docker-entrypoint.sh" ]
