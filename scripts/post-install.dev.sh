@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Install Recommended Plugins
-wp plugin install --activate theme-check disable-comments query-monitor
+wp plugin install --activate theme-check disable-comments query-monitor jetpack video-popup
 wp disable-comments settings --types=all
 wp disable-comments delete --types=all
 

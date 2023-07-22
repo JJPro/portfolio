@@ -34,6 +34,6 @@
 		</a>
 	</div>
 	<div class="is-layout-constrained" style="text-align: center; margin-top: 3rem;">
-		<a class="explore-btn" href="/projects">EXPLORE MY PROJECTS</a>
+		<a class="explore-btn" href="/projects/">EXPLORE MY PROJECTS</a>
 	</div>
 </div>

@@ -27,6 +27,7 @@ body.page-template-projects {
 	.project-card-style-1 {
 		width: 17.95rem;
 		position: relative;
+		a.main {display: block;}
 		.main {
 			text-decoration: none;
 			transition: all 0.3s linear 0s;
