@@ -50,7 +50,7 @@ $ossProjects = [
 	[
 		'title' => 'Zigbee2MQTT',
 		'summary' => 'Zigbee to MQTT bridge, get rid of your proprietary Zigbee bridges',
-		'thumbnail' => 'z2m.png',
+		'thumbnail' => 'z2m.webp',
 		'tint' => '#FBB51F',
 		'href' => 'https://www.zigbee2mqtt.io/',
 		'repos' => ['https://github.com/JJPro/CTP-R01-converter'],
@@ -59,7 +59,7 @@ $ossProjects = [
 	[
 		'title' => 'Magic Racket',
 		'summary' => 'Provides code intellisense for the Racket language in VSCode',
-		'thumbnail' => 'racket.png',
+		'thumbnail' => 'racket.webp',
 		'tint' => 'rgba(62, 91, 169, 0.90)',
 		'href' => 'https://marketplace.visualstudio.com/items?itemName=evzen-wybitul.magic-racket',
 		'repos' => [
@@ -73,7 +73,7 @@ $personalProjects = [
 	[
 		'title' => 'This Website',
 		'summary' => 'My portfolio website',
-		'thumbnail' => 'my-avatar.png',
+		'thumbnail' => 'my-avatar.webp',
 		'tint' => '#6B9DD9',
 		'href' => 'https://jjpro.me/',
 		'repos' => ['https://github.com/JJPro/portfolio'],
@@ -82,7 +82,7 @@ $personalProjects = [
 	[
 		'title' => 'Loving Heart',
 		'summary' => 'Loving Heart Retreats Glamping',
-		'thumbnail' => 'lhr.png',
+		'thumbnail' => 'lhr.webp',
 		'tint' => 'rgba(79, 136, 130, 0.90)',
 		'href' => 'https://www.lovingheartretreats.com/',
 		'tags' => ['ES6', 'React', 'PHP', 'Webpack', 'Babel', 'ESLint', 'Styled Components', 'SASS', 'Tailwind', 'Docker'],
@@ -90,7 +90,7 @@ $personalProjects = [
 	[
 		'title' => 'NUCSSA',
 		'summary' => 'Website, org wiki, mail service, LDAP server, airport pickup app ...',
-		'thumbnail' => 'nucssa.png',
+		'thumbnail' => 'nucssa.webp',
 		'thumbnailBG' => '#31120D',
 		'thumbnailScale' => '90%',
 		'isVideo' => true,
@@ -119,7 +119,7 @@ $personalProjects = [
 	[
 		'title' => 'Tanks',
 		'summary' => 'Multiplayer web game',
-		'thumbnail' => 'tanks.png',
+		'thumbnail' => 'tanks.webp',
 		'thumbnailScale' => '73%;',
 		'tint' => 'rgba(35, 81, 121, 0.90)',
 		'href' => 'https://tanks.jjpro.me',
@@ -132,7 +132,7 @@ $personalProjects = [
 		'title' => 'Ride Ordering<br/>(Airport Pickup)',
 		'titleStyle' => 'font-size: 1.5rem;',
 		'summary' => 'Project@NUCSSA, provides airport pickup rides for new students',
-		'thumbnail' => 'flight.png',
+		'thumbnail' => 'flight.webp',
 		'tint' => 'rgba(54, 150, 216, 0.90)',
 		'href' => 'https://www.nucssa.org/pickup/',
 		'repos' => [
@@ -143,7 +143,7 @@ $personalProjects = [
 	[
 		'title' => 'WP LDAP Auth',
 		'summary' => 'Enables WordPress to authenticate with LDAP server, and manage user permissions by groups',
-		'thumbnail' => 'wordpress.png',
+		'thumbnail' => 'wordpress.webp',
 		'tint' => 'rgba(50, 55, 60, 0.90)',
 		'tooltip' => "This is part of a big project. Contact me on LinkedIn if you want to use commercially and I'd love to customize it for your organization.",
 		'tags' => ['PHP', 'LDAP', 'React', 'Webpack', 'Babel', 'ESLint', 'SASS', 'Github Actions/CICD'],
@@ -152,7 +152,7 @@ $personalProjects = [
 		'title' => 'Paper Trades<br/>(Archived)',
 		'titleStyle' => 'font-size: 1.5rem;',
 		'summary' => 'Practice your trading skills with virtual money',
-		'thumbnail' => 'bitcoin.png',
+		'thumbnail' => 'bitcoin.webp',
 		'tint' => 'rgba(247, 147, 26, 0.90)',
 		'repos' => [
 			'https://github.com/JJPro/paper-trading-system',
@@ -165,7 +165,7 @@ $personalProjects = [
 		'summary' => 'Cross Factor Analysis for Blue Bikes in greater Boston',
 		'href' => 'https://bikes.jjpro.me',
 		'tooltip' => 'The weather API provider used in the project has been closed, so data won\'t load, the project is kept alive to demo React & UI design',
-		'thumbnail' => 'bluebikes.jpg',
+		'thumbnail' => 'bluebikes.webp',
 		'tint' => '#3D88C9',
 		'repos' => [
 			'https://github.com/JJPro/bikes-docker',
@@ -178,13 +178,13 @@ $designProjects = [
 	[
 		'title' => 'NUCSSA Portal & Admin Dash',
 		'summary' => 'Home page design for mobile and desktop; admin dashboard for user permission management',
-		'thumbnail' => 'design-nucssa.png',
+		'thumbnail' => 'design-nucssa.webp',
 		'href' => 'https://www.figma.com/file/uZsZMTuAqx5kttXw7orNE8/NUCSSA-Portal?type=design&t=LljkkWUC686HvPBe-6',
 	],
 	[
 		'title' => 'Loving Heart Retreats',
 		'summary' => 'Loving Heart Retreats glamping site initial design',
-		'thumbnail' => 'design-lhr.png',
+		'thumbnail' => 'design-lhr.webp',
 		'href' => 'https://www.figma.com/file/Ab6zO9mdcX2faiSVgTn6hj/Loving-Heart?type=design&t=LljkkWUC686HvPBe-6',
 	],
 ];
