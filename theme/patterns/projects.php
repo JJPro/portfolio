@@ -130,7 +130,7 @@ $personalProjects = [
 	],
 	[
 		'title' => 'Ride Ordering<br/>(Airport Pickup)',
-		'titleStyle' => 'font-size: 1.5rem;',
+		'titleStyle' => 'font-size: 1.3rem;',
 		'summary' => 'Project@NUCSSA, provides airport pickup rides for new students',
 		'thumbnail' => 'flight.webp',
 		'tint' => 'rgba(54, 150, 216, 0.90)',
@@ -150,7 +150,7 @@ $personalProjects = [
 	],
 	[
 		'title' => 'Paper Trades<br/>(Archived)',
-		'titleStyle' => 'font-size: 1.5rem;',
+		'titleStyle' => 'font-size: 1.3rem;',
 		'summary' => 'Practice your trading skills with virtual money',
 		'thumbnail' => 'bitcoin.webp',
 		'tint' => 'rgba(247, 147, 26, 0.90)',
@@ -161,7 +161,7 @@ $personalProjects = [
 	],
 	[
 		'title' => 'Blue Bikes Analysis<br/>(Archived)',
-		'titleStyle' => 'font-size: 1.5rem;',
+		'titleStyle' => 'font-size: 1.3rem;',
 		'summary' => 'Cross Factor Analysis for Blue Bikes in greater Boston',
 		'href' => 'https://bikes.jjpro.me',
 		'tooltip' => 'The weather API provider used in the project has been closed, so data won\'t load, the project is kept alive to demo React & UI design',
