@@ -1,4 +1,4 @@
-[![Docker Image CD](https://github.com/JJPro/portfolio/actions/workflows/docker-image.yml/badge.svg)](https://github.com/JJPro/portfolio/actions/workflows/docker-image.yml)
+[![Multi-Arch Build](https://github.com/JJPro/portfolio/actions/workflows/multi-arch-build.yml/badge.svg)](https://github.com/JJPro/portfolio/actions/workflows/multi-arch-build.yml)
 
 ## Dockerfile
 Contains portfolio theme files, this is a one go image, it spins, copies theme files to mount volume, then exits
