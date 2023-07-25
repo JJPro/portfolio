@@ -157,7 +157,7 @@ $personalProjects = [
 		'repos' => [
 			'https://github.com/JJPro/paper-trading-system',
 		],
-		'tags' => ['Elixir', 'WebSocket', 'PubSub', 'ES6', 'React', 'Webpack', 'Babel', 'SASS'],
+		'tags' => ['Elixir', 'WebSocket', 'PubSub', 'ES6', 'React', 'Webpack', 'Babel', 'SASS', 'OAuth'],
 	],
 	[
 		'title' => 'Blue Bikes Analysis<br/>(Archived)',
