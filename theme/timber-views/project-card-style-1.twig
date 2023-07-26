@@ -30,7 +30,7 @@
 	</div>
 	<div class="lower">
 		<div class="summary">
-			{{ summary }}
+			{{ summary | raw }}
 		</div>
 		<ul class="project-tags">
 			{% for tag in tags %}

@@ -49,7 +49,7 @@ function renderWithStyle2($attrs)
 $ossProjects = [
 	[
 		'title' => 'Zigbee2MQTT',
-		'summary' => 'Zigbee to MQTT bridge, get rid of your proprietary Zigbee bridges',
+		'summary' => 'Added driver support for Aqara Magic Cube Pro',
 		'thumbnail' => 'z2m.webp',
 		'tint' => '#FBB51F',
 		'href' => 'https://www.zigbee2mqtt.io/',
@@ -58,7 +58,7 @@ $ossProjects = [
 	],
 	[
 		'title' => 'Magic Racket',
-		'summary' => 'Provides code intellisense for the Racket language in VSCode',
+		'summary' => 'Added code intellisense feature to the extension, enabling symbol lookup and jump-to-definitions',
 		'thumbnail' => 'racket.webp',
 		'tint' => 'rgba(62, 91, 169, 0.90)',
 		'href' => 'https://marketplace.visualstudio.com/items?itemName=evzen-wybitul.magic-racket',
