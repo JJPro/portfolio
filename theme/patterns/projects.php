@@ -72,7 +72,7 @@ $ossProjects = [
 $personalProjects = [
 	[
 		'title' => 'This Website',
-		'summary' => 'My portfolio website',
+		'summary' => 'My online portfolio',
 		'thumbnail' => 'my-avatar.webp',
 		'tint' => '#6B9DD9',
 		'href' => 'https://jjpro.me/',
