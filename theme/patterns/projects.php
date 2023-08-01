@@ -176,6 +176,12 @@ $personalProjects = [
 ];
 $designProjects = [
 	[
+		'title' => 'This Website',
+		'summary' => 'My online portfolio',
+		'thumbnail' => 'design-portfolio.webp',
+		'href' => 'https://www.figma.com/file/Jjjo1SWM2RieUDVhH7Eytd/Personal-Portfolio?type=design&node-id=0%3A1&mode=design&t=cx37q8ZWzRkN3gVI-1',
+	],
+	[
 		'title' => 'NUCSSA Portal & Admin Dash',
 		'summary' => 'Home page design for mobile and desktop; admin dashboard for user permission management',
 		'thumbnail' => 'design-nucssa.webp',
