@@ -149,6 +149,16 @@ $personalProjects = [
 		'tags' => ['PHP', 'LDAP', 'React', 'Webpack', 'Babel', 'ESLint', 'SASS', 'Github Actions/CICD'],
 	],
 	[
+		'title' => 'MVC Web Framework',
+		'summary' => 'My self-built MVC web framework, containing regex routers, controllers, models, and views',
+		'thumbnail' => 'MVC-webframework.webp',
+		'tint' => '#0d192e',
+		'repos' => [
+			'https://github.com/JJPro/PHP-Web-Framework',
+		],
+		'tags' => ['PHP'],
+	],
+	[
 		'title' => 'Paper Trades<br/>(Archived)',
 		'titleStyle' => 'font-size: 1.3rem;',
 		'summary' => 'Practice your trading skills with virtual money',
