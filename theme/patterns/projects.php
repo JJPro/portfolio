@@ -88,6 +88,19 @@ $personalProjects = [
 		'tags' => ['ES6', 'React', 'PHP', 'Webpack', 'Babel', 'ESLint', 'Styled Components', 'SASS', 'Tailwind', 'Docker'],
 	],
 	[
+		'title' => 'Linux<br/>inode File System',
+		'titleStyle' => 'font-size: 1.3rem;',
+		'summary' => 'Lightweight implementation of the Linux inode file system in user space',
+		'thumbnail' => 'linux.webp',
+		'thumbnailBG' => 'hsl(320 62% 25% / 1)',
+		'thumbnailScale' => '70%',
+		'tint' => '#400F30',
+		'repos' => [
+			'https://github.com/JJPro/inode-file-system',
+		],
+		'tags' => ['C', 'CMake'],
+	],
+	[
 		'title' => 'NUCSSA',
 		'summary' => 'Website, org wiki, mail service, LDAP server, airport pickup app ...',
 		'thumbnail' => 'nucssa.webp',
